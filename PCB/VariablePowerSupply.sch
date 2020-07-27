@@ -93,7 +93,7 @@ Wire Wire Line
 	3050 3050 3050 3000
 Text GLabel 4450 5250 2    50   Output ~ 0
 VoutAP
-Text GLabel 4100 5550 2    50   Output ~ 0
+Text GLabel 4450 5550 2    50   Output ~ 0
 VoutAN
 Wire Wire Line
 	4100 5550 4100 5750
@@ -910,8 +910,6 @@ Text Label 7950 3650 0    50   ~ 0
 PWR_B_OUT
 Text Label 4100 3700 0    50   ~ 0
 PWR_A_OUT
-Text Label 4100 5700 0    50   ~ 0
-PWR_A_RET
 Text Label 11900 14050 0    50   ~ 0
 PWR_B_INTERNAL
 Text Label 11800 14450 0    50   ~ 0
@@ -2510,4 +2508,40 @@ Wire Notes Line
 	2050 7250 10150 7250
 Wire Notes Line
 	2050 10400 10150 10400
+Wire Wire Line
+	4100 5550 4450 5550
+$Comp
+L Device:CP1 C?
+U 1 1 5F4EFD14
+P 3900 5400
+F 0 "C?" H 4015 5446 50  0000 L CNN
+F 1 "10uF" H 4015 5355 50  0000 L CNN
+F 2 "" H 3900 5400 50  0001 C CNN
+F 3 "~" H 3900 5400 50  0001 C CNN
+	1    3900 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5F4F0797
+P 7800 5400
+F 0 "C?" H 7915 5446 50  0000 L CNN
+F 1 "10uF" H 7915 5355 50  0000 L CNN
+F 2 "" H 7800 5400 50  0001 C CNN
+F 3 "~" H 7800 5400 50  0001 C CNN
+	1    7800 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5250 4100 5250
+Connection ~ 4100 5250
+Wire Wire Line
+	3900 5550 4100 5550
+Connection ~ 4100 5550
+Wire Wire Line
+	7800 5250 7950 5250
+Connection ~ 7950 5250
+Wire Wire Line
+	7800 5550 7950 5550
+Connection ~ 7950 5550
 $EndSCHEMATC
