@@ -5,8 +5,9 @@
             "includePath": [
                 "/home/pau/.arduino15/packages/STM32/tools/**",
                 "/home/pau/Arduino/libraries/**",
+                "/home/pau/.arduino15/packages/STM32/hardware/stm32/1.9.0/**",
                 "/home/pau/Downloads/arduino-1.8.13/libraries/**",
-                "/home/pau/.arduino15/packages/STM32/hardware/stm32/1.9.0/**"
+                "/home/pau/.arduino15/packages/STM32/tools/**"
             ],
             "forcedInclude": [
                 "/home/pau/.arduino15/packages/STM32/hardware/stm32/1.9.0/cores/arduino/Arduino.h"

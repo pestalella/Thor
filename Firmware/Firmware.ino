@@ -1,4 +1,3 @@
-
 #include "display.h"
 #include "keyboard.h"
 #include <Arduino.h>
