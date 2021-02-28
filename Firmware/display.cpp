@@ -56,6 +56,14 @@ void Display::clearScreen()
 void Display::changeDisplayPage()
 {
     pageShown = static_cast<DisplayPage>((static_cast<int>(pageShown) + 1) % static_cast<int>(DisplayPage::NumDisplayPages));
+    switch (pageShown) {
+    case DisplayPage::Temperatures:
+        Serial.println("[changeDisplayPage] Show Temperatures");
+        break;
+    case DisplayPage::ChannelOutput:
+        Serial.println("[changeDisplayPage] Show Channel outputs");
+        break;
+    }
     clearScreen();
 }
 
@@ -148,5 +156,3 @@ void Display::updateTemperatures(float channelATemp, float channelBTemp)
     temperatureChannelA = (temperatureChannelA + channelATemp)*0.5;
     temperatureChannelB = (temperatureChannelB + channelBTemp)*0.5;
 }
-
-
