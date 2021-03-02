@@ -1,6 +1,5 @@
 #include "display.h"
 #include "keyboard.h"
-#include <Arduino.h>
 
 #define TEMP_A         PA1
 #define TEMP_B         PA0

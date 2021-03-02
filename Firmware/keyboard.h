@@ -1,11 +1,11 @@
 #pragma once
 
-#include <Arduino.h>
+#include "RotaryEncoder.h"
 
 class Keyboard
 {
 public:
-    const int buttonPin = PB9;
+    Keyboard();
     enum Key {
         None = 0,
         DisplayMode,
@@ -17,9 +17,13 @@ public:
         SerialEnable,
         LAST_KEY
     };
+
+
     void setUp();
     Key pressedKey();
 
 private:
+    const int buttonPin = PB9;
     bool keyState[LAST_KEY];
+    RotaryEncoder encoder;
 };
